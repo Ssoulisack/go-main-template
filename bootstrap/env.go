@@ -45,6 +45,10 @@ type Env struct {
 		PathIp string `mapstructure:"path_ip"`
 	} `mapstructure:"file"`
 
+	API struct {
+		Key string `mapstructure:"key"`
+	} `mapstructure:"api"`
+
 	JWT struct {
 		AccessToken  string `mapstructure:"access_token"`
 		RefreshToken string `mapstructure:"refresh_token"`

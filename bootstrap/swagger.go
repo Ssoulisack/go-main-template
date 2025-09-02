@@ -1,8 +1,8 @@
 package bootstrap
 
-// @title ITQ HR Landing Page Backend API
+// @title Backend API
 // @version 1.0.0
-// @description Backend API for ITQ HR Landing Page application with authentication, user management, and candidate management features
+// @description Backend API 
 
 // IMPORTANT: All API endpoints require an Access token for authentication.
 // Please contact the administrator to obtain your API key.
@@ -47,15 +47,13 @@ func NewSwaggerConfig() *SwaggerConfig {
 	case "prd":
 		host = fmt.Sprintf("localhost:%d", GlobalEnv.App.Port)
 	case "dev":
-		host = fmt.Sprintf("10.150.1.85:%d", GlobalEnv.App.Port)
-	case "uat":
-		host = fmt.Sprintf("10.150.1.85:%d", GlobalEnv.App.Port)
+		host = fmt.Sprintf("localhost:%d", GlobalEnv.App.Port)
 	default:
 		host = fmt.Sprintf("localhost:%d", GlobalEnv.App.Port)
 	}
 	return &SwaggerConfig{
-		Title:       "ITQ HR Landing Page Backend API",
-		Description: "Backend API for ITQ HR Landing Page application",
+		Title:       "Backend API",
+		Description: "Backend API",
 		Version:     "1.0.0",
 		Host:        host,
 		BasePath:    "/api/v1",

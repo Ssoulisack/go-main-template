@@ -29,6 +29,9 @@ file:
   bucket:
   path_ip:
 
+api:
+  key:
+
 jwt:
   access_token:
   refresh_token:
