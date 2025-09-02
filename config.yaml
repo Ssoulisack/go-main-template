@@ -1,0 +1,34 @@
+App:
+  port:
+
+database:
+  master_host:
+  master_port:
+  master_username:
+  master_password:
+  master_dbname:
+
+  replica_host:
+  replica_port:
+  replica_username:
+  replica_password:
+  replica_dbname:
+
+  status: false # whether to use replica database or not
+
+redis:
+  host: 
+  port: 
+  password: 
+  db: 
+
+file:
+  host:
+  port:
+  key:
+  bucket:
+  path_ip:
+
+jwt:
+  access_token:
+  refresh_token:
