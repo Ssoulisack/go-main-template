@@ -6,4 +6,4 @@ docs/*
 .env.development.local
 .env.test.local
 .env.production.local
-.git_workflow.sh
+git_workflow.sh
