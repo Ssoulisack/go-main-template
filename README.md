@@ -54,6 +54,15 @@ jwt:
 ```
 
 ### 4. Run Application
+
+#### Using Makefile (Recommended)
+```bash
+# Generate Swagger docs and run the application
+make swag
+make run
+```
+
+#### Manual Commands
 ```bash
 # Generate Swagger docs
 swag init -g ./bootstrap/swagger.go
@@ -118,8 +127,27 @@ ithq-kkl-v2/
 
 ## Development
 
+### Makefile Commands
+
+The project includes a Makefile with convenient commands for common development tasks:
+
+```bash
+# Run the application
+make run
+
+# Generate Swagger documentation
+make swag
+
+# Execute git workflow script
+make git
+```
+
 ### Git Workflow
 ```bash
+# Using Makefile
+make git
+
+# Or manually
 chmod +x git_workflow.sh
 ./git_workflow.sh "commit message"
 ```
@@ -130,7 +158,27 @@ go test ./...
 go test -cover ./...
 ```
 
+### Quick Development Commands
+```bash
+# Generate docs and run in one go
+make swag && make run
+
+# Just run the application
+make run
+
+# Just generate Swagger docs
+make swag
+```
+
 ## Common Issues
+
+**Makefile not working:**
+```bash
+# Ensure you have Make installed
+# On macOS: brew install make (if not already installed)
+# On Ubuntu/Debian: sudo apt-get install make
+# On Windows: Use WSL or install Make for Windows
+```
 
 **Swagger not found:**
 ```bash
